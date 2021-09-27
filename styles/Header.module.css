@@ -1,0 +1,27 @@
+.header {
+  @apply flex items-center bg-gray-900 text-gray-100 shadow p-4 w-full;
+
+  .box {
+    @apply container mx-auto flex flex-wrap flex-col sm:flex-row items-center;
+  }
+
+  .logoBox {
+    @apply flex items-center 
+    md:justify-start 
+    mb-4 md:mb-0 
+    md:w-1/5 
+    font-medium;
+  }
+
+  & .logoText {
+    @apply ml-3 text-3xl;
+  }
+
+  .navItems {
+    @apply flex flex-wrap md:w-4/5 text-base uppercase md:ml-auto justify-end space-x-4;
+
+    & a {
+      @apply cursor-pointer hover:text-indigo-300;
+    }
+  }
+}
