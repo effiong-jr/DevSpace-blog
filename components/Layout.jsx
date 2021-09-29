@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 
 const Layout = ({ title, children, description, keywords }) => {
   return (
-    <div>
+    <div className="h-screen ">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -13,7 +13,9 @@ const Layout = ({ title, children, description, keywords }) => {
 
       <Header />
 
-      <main className="container mx-auto md:my-7 sm:mt-0">{children}</main>
+      <main className="container md:my-7 sm:mt-0 mx-auto h-4/5 ">
+        {children}
+      </main>
     </div>
   )
 }

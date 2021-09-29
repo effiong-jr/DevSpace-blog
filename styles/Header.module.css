@@ -6,11 +6,7 @@
   }
 
   .logoBox {
-    @apply flex items-center 
-    md:justify-start 
-    mb-4 md:mb-0 
-    md:w-1/5 
-    font-medium;
+    @apply flex items-center md:justify-start mb-4 md:mb-0 md:w-1/5 font-medium;
   }
 
   & .logoText {
