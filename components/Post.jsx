@@ -4,8 +4,6 @@ import Link from 'next/link'
 import styles from '@/styles/Post.module.css'
 
 const Post = ({ post }) => {
-  console.log(post)
-  console.log(post.frontmatter.author_image)
   return (
     <div className={styles.post}>
       <Image

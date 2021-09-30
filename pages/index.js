@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import Layout from '@/components/Layout'
 import Post from '@/components/Post'
+import { sortByDate } from '@/utils/index'
 import styles from '@/styles/HomePage.module.css'
 
 export default function HomePage({ posts }) {
@@ -43,9 +44,7 @@ export async function getStaticProps() {
     return { slug, frontmatter }
   })
 
-  console.log(posts)
-
   return {
-    props: { posts },
+    props: { posts: posts.sort(sortByDate) },
   }
 }
