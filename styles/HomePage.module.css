@@ -1,0 +1,12 @@
+.homePage {
+  .postsBox {
+    @apply grid sm:grid-cols-2  lg:grid-cols-3 gap-5;
+  }
+
+  .link {
+    @apply block text-center border border-gray-500 
+    text-gray-800 rounded-md py-4 my-5 transition duration-500
+    ease-in select-none hover:text-white hover:bg-gray-500
+    focus:outline-none focus:shadow w-2/6 mx-auto;
+  }
+}
