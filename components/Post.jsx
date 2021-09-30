@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import CategoryLabel from './CategoryLabel'
 
 import styles from '@/styles/Post.module.css'
 
@@ -18,7 +19,7 @@ const Post = ({ post }) => {
         <span className="font-light text-gray-600">
           {post.frontmatter.date}
         </span>
-        <div>{post.frontmatter.category}</div>
+        <CategoryLabel>{post.frontmatter.category}</CategoryLabel>
       </div>
 
       <div className="mt-2">
